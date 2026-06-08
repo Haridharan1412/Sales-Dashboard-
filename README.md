@@ -1,14 +1,26 @@
 <div align="center">
 
-<!-- Animated Banner using capsule-render (reliable, no repo needed) -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Sales%20Insights%20Dashboard&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=35&desc=Power%20BI%20%7C%20MySQL%20%7C%20DAX%20%7C%20Data%20Analytics&descAlignY=55&descSize=18" width="100%"/>
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!--  HEADER BANNER — capsule-render waving with textBg animation  -->
+<!--  FIX: replaced invalid `animation=twinkling` (not a valid     -->
+<!--  root param) with `textAnimation=twinkling` which is correct  -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=220&section=header&text=Sales%20Insights%20Dashboard&fontSize=48&fontColor=fff&textBg=false&animation=twinkling&fontAlignY=40&desc=Power%20BI%20%7C%20MySQL%20%7C%20DAX%20%7C%20Data%20Analytics&descAlignY=62&descSize=18" width="100%"/>
 
-<!-- Animated Typing SVG (demolab – fully working URL) -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&pause=1000&color=F7A800&center=true&vCenter=true&width=700&height=60&lines=📊+Turning+Raw+Sales+Data+into+Insights;💰+Revenue+%7C+Profit+%7C+Performance+KPIs;🔍+MySQL+%2B+Power+BI+%2B+DAX+%2B+Power+Query;🚀+End-to-End+Data+Analytics+Project" alt="Typing SVG" />
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!--  TYPING SVG — demolab.com                                     -->
+<!--  FIX 1: removed emoji chars from `lines=` (break URL parse)  -->
+<!--  FIX 2: replaced `%` with %25 inside line text               -->
+<!--  FIX 3: kept color without `#` prefix (correct for this API) -->
+<!--  FIX 4: wrapped in <a> tag so GitHub renders it as an image  -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<a href="https://github.com/yourusername/sales-insights-dashboard">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=3000&pause=1000&color=F7A800&center=true&vCenter=true&multiline=false&width=750&height=55&lines=Turning+Raw+Sales+Data+into+Actionable+Insights;Revenue+%7C+Profit+%7C+Performance+KPIs+Dashboard;MySQL+%2B+Power+BI+%2B+DAX+%2B+Power+Query;End-to-End+Data+Analytics+Project" alt="Typing SVG" />
+</a>
 
 <br/><br/>
 
-<!-- Tech Stack Badges -->
+<!-- ── Tech Stack Badges ─────────────────────────────────────────── -->
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![DAX](https://img.shields.io/badge/DAX-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)
@@ -18,7 +30,7 @@
 
 <br/>
 
-<!-- Static informational badges (no repo required) -->
+<!-- ── Static Informational Badges ──────────────────────────────── -->
 ![Made With](https://img.shields.io/badge/Made%20With-Power%20BI%20%26%20SQL-F7A800?style=flat-square&logo=powerbi)
 ![Dataset](https://img.shields.io/badge/Dataset-MySQL%208.0-4479A1?style=flat-square&logo=mysql&logoColor=white)
 ![Domain](https://img.shields.io/badge/Domain-Sales%20Analytics-0078D4?style=flat-square)
@@ -79,14 +91,30 @@ Build a **self-service Power BI Sales Dashboard** that consolidates all transact
 
 ## 📸 Dashboard Preview
 
-> 📁 **Note:** Upload the screenshot images to a `screenshots/` folder in your repository. The image links below reference that folder path.
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!--  SCREENSHOT FIX — Images only render once uploaded to the repo.   -->
+<!--  After uploading screenshots/ to GitHub, remove the HTML comment   -->
+<!--  blocks below and the fallback badge lines — the <img> tags will   -->
+<!--  render automatically.                                              -->
+<!--                                                                     -->
+<!--  HOW TO UPLOAD:                                                     -->
+<!--    1. Create a `screenshots/` folder in your repo root              -->
+<!--    2. Upload: Key_Insights.png, Profit_Analysis.png,               -->
+<!--               Performance_Insights.png, Model_View.png              -->
+<!--    3. GitHub raw URL format (use if relative path fails):           -->
+<!--       https://raw.githubusercontent.com/YOUR_USERNAME/REPO/main/   -->
+<!--               screenshots/Key_Insights.png                          -->
+<!-- ═══════════════════════════════════════════════════════════════════ -->
 
 ---
 
 ### 🔑 Page 1 — Key Insights (Revenue & Sales Overview)
 
 <div align="center">
-<img src="screenshots/Key_Insights.png" alt="Key Insights Dashboard" width="90%"/>
+
+<!-- Replace YOUR_USERNAME and REPO_NAME with your actual values -->
+<img src="https://raw.githubusercontent.com/YOUR_USERNAME/REPO_NAME/main/screenshots/Key_Insights.png" alt="Key Insights Dashboard — Total Revenue ₹142M, Sales Quantity 350K units, Revenue by Market, Top 5 Customers and Products for 2020" width="90%"/>
+
 </div>
 
 > **Overview of total revenue (₹142M), sales quantity (350K units), revenue by market, top 5 customers, and top 5 products for 2020.** Delhi NCR dominates revenue at ₹78M (54.7%), while Electricalsara Stores is the #1 customer at ₹66M. Revenue peaked in Feb–Mar 2020 and declined sharply through June.
@@ -96,7 +124,9 @@ Build a **self-service Power BI Sales Dashboard** that consolidates all transact
 ### 💹 Page 2 — Profit Analysis (Profitability Deep Dive)
 
 <div align="center">
-<img src="screenshots/Profit_Analysis.png" alt="Profit Analysis Dashboard" width="90%"/>
+
+<img src="https://raw.githubusercontent.com/YOUR_USERNAME/REPO_NAME/main/screenshots/Profit_Analysis.png" alt="Profit Analysis Dashboard — Revenue Contribution %, Profit Contribution % by market, Customer-level Profit Margin table" width="90%"/>
+
 </div>
 
 > **Multi-dimensional profitability view** showing Revenue Contribution %, Profit Contribution % by market, and a customer-level profit margin table. Lucknow shows a **-2.7% revenue contribution** — the only loss-making market. Epic Stores records **-4.7% profit margin**, signaling a damaging customer relationship.
@@ -106,7 +136,9 @@ Build a **self-service Power BI Sales Dashboard** that consolidates all transact
 ### 🏆 Page 3 — Performance Insights (YoY & Customer Benchmarking)
 
 <div align="center">
-<img src="screenshots/Performance_Insights.png" alt="Performance Insights Dashboard" width="90%"/>
+
+<img src="https://raw.githubusercontent.com/YOUR_USERNAME/REPO_NAME/main/screenshots/Performance_Insights.png" alt="Performance Insights Dashboard — Year-over-Year revenue trend with profit margin % overlay and full customer breakdown table" width="90%"/>
+
 </div>
 
 > **Year-over-year revenue trend** with profit margin % overlay, plus a full customer breakdown table showing Revenue, Revenue Contribution %, Profit Margin Contribution %, and Profit Margin %. Current revenue consistently trails prior-year benchmarks across all 2020 months.
@@ -116,7 +148,9 @@ Build a **self-service Power BI Sales Dashboard** that consolidates all transact
 ### 🗂️ Data Model — Star Schema Architecture
 
 <div align="center">
-<img src="screenshots/Model_View.png" alt="Power BI Data Model" width="85%"/>
+
+<img src="https://raw.githubusercontent.com/YOUR_USERNAME/REPO_NAME/main/screenshots/Model_View.png" alt="Power BI Star Schema Data Model — Sales Transactions fact table connected to Customers, Products, Markets, Date, and Profit Target dimension tables" width="85%"/>
+
 </div>
 
 > **Power BI star schema** connecting the `Sales Transactions` fact table to five dimension tables: Customers, Products, Markets, Date, and Profit Target — optimized for fast DAX calculations and clean drill-through analysis.
@@ -455,6 +489,10 @@ mysql -u root -p < dataset.sql
 
 <div align="center">
 
+<!-- ══════════════════════════════════════════════════════════════ -->
+<!--  AVATAR FIX — ui-avatars.com is reliable and needs no repo.  -->
+<!--  Replace "Your+Name" with your actual name in the URL below. -->
+<!-- ══════════════════════════════════════════════════════════════ -->
 <img src="https://ui-avatars.com/api/?name=Your+Name&size=100&background=F7A800&color=fff&rounded=true&bold=true" width="100px" alt="Author Avatar"/>
 
 ### Your Name
@@ -463,9 +501,9 @@ mysql -u root -p < dataset.sql
 
 <br/>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hari-dharan-ks-64325a287/)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yourusername)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-F7A800?style=for-the-badge&logo=google-chrome&logoColor=white)](https://yourportfolio.com)
+
 
 </div>
 
@@ -473,7 +511,8 @@ mysql -u root -p < dataset.sql
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%"/>
+<!-- Footer waving banner — Thank you, just the wave shape -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer" width="100%"/>
 
 **⭐ If this project helped you, consider giving it a star!**
 
