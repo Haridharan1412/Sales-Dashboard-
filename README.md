@@ -77,10 +77,6 @@ Build a **self-service Power BI Sales Dashboard** that consolidates all transact
 
 ### 🔑 Page 1 — Key Insights (Revenue & Sales Overview)
 
-<div align="center">
-<img src="" alt="Key Insights Dashboard — Total Revenue ₹142M, Sales Quantity 350K units, Revenue by Market, Top 5 Customers and Products for 2020" width="90%"/>
-</div>
-
 > **Overview of total revenue (₹142M), sales quantity (350K units), revenue by market, top 5 customers, and top 5 products for 2020.** Delhi NCR dominates revenue at ₹78M (54.7%), while Electricalsara Stores is the #1 customer at ₹66M. Revenue peaked in Feb–Mar 2020 and declined sharply through June.
 
 ---
