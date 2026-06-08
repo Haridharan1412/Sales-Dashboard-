@@ -333,8 +333,6 @@ WHERE date.year = 2020
 | 📄 **Multi-Page Navigation** | Three report pages: Key Insights · Profit Analysis · Performance Insights |
 | 🔴 **Negative Margin Highlighting** | Conditional formatting flags loss-making markets in red |
 
-```
-
 ---
 
 ## 💼 Business Impact
