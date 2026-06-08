@@ -91,30 +91,14 @@ Build a **self-service Power BI Sales Dashboard** that consolidates all transact
 
 ## 📸 Dashboard Preview
 
-<!-- ═══════════════════════════════════════════════════════════════════ -->
-<!--  SCREENSHOT FIX — Images only render once uploaded to the repo.   -->
-<!--  After uploading screenshots/ to GitHub, remove the HTML comment   -->
-<!--  blocks below and the fallback badge lines — the <img> tags will   -->
-<!--  render automatically.                                              -->
-<!--                                                                     -->
-<!--  HOW TO UPLOAD:                                                     -->
-<!--    1. Create a `screenshots/` folder in your repo root              -->
-<!--    2. Upload: Key_Insights.png, Profit_Analysis.png,               -->
-<!--               Performance_Insights.png, Model_View.png              -->
-<!--    3. GitHub raw URL format (use if relative path fails):           -->
-<!--       https://raw.githubusercontent.com/YOUR_USERNAME/REPO/main/   -->
-<!--               screenshots/Key_Insights.png                          -->
-<!-- ═══════════════════════════════════════════════════════════════════ -->
+
 
 ---
 
 ### 🔑 Page 1 — Key Insights (Revenue & Sales Overview)
 
 <div align="center">
-
-<!-- Replace YOUR_USERNAME and REPO_NAME with your actual values -->
-<img src="https://raw.githubusercontent.com/YOUR_USERNAME/REPO_NAME/main/screenshots/Key_Insights.png" alt="Key Insights Dashboard — Total Revenue ₹142M, Sales Quantity 350K units, Revenue by Market, Top 5 Customers and Products for 2020" width="90%"/>
-
+<img src="screenshots/Key_Insights.svg" alt="Key Insights Dashboard — Total Revenue ₹142M, Sales Quantity 350K units, Revenue by Market, Top 5 Customers and Products for 2020" width="90%"/>
 </div>
 
 > **Overview of total revenue (₹142M), sales quantity (350K units), revenue by market, top 5 customers, and top 5 products for 2020.** Delhi NCR dominates revenue at ₹78M (54.7%), while Electricalsara Stores is the #1 customer at ₹66M. Revenue peaked in Feb–Mar 2020 and declined sharply through June.
@@ -124,9 +108,7 @@ Build a **self-service Power BI Sales Dashboard** that consolidates all transact
 ### 💹 Page 2 — Profit Analysis (Profitability Deep Dive)
 
 <div align="center">
-
-<img src="https://raw.githubusercontent.com/YOUR_USERNAME/REPO_NAME/main/screenshots/Profit_Analysis.png" alt="Profit Analysis Dashboard — Revenue Contribution %, Profit Contribution % by market, Customer-level Profit Margin table" width="90%"/>
-
+<img src="screenshots/Profit_Analysis.svg" alt="Profit Analysis Dashboard — Revenue Contribution %, Profit Contribution % by market, Customer-level Profit Margin table" width="90%"/>
 </div>
 
 > **Multi-dimensional profitability view** showing Revenue Contribution %, Profit Contribution % by market, and a customer-level profit margin table. Lucknow shows a **-2.7% revenue contribution** — the only loss-making market. Epic Stores records **-4.7% profit margin**, signaling a damaging customer relationship.
@@ -136,9 +118,7 @@ Build a **self-service Power BI Sales Dashboard** that consolidates all transact
 ### 🏆 Page 3 — Performance Insights (YoY & Customer Benchmarking)
 
 <div align="center">
-
-<img src="https://raw.githubusercontent.com/YOUR_USERNAME/REPO_NAME/main/screenshots/Performance_Insights.png" alt="Performance Insights Dashboard — Year-over-Year revenue trend with profit margin % overlay and full customer breakdown table" width="90%"/>
-
+<img src="screenshots/Performance_Insights.svg" alt="Performance Insights Dashboard — Year-over-Year revenue trend with profit margin % overlay and full customer breakdown table" width="90%"/>
 </div>
 
 > **Year-over-year revenue trend** with profit margin % overlay, plus a full customer breakdown table showing Revenue, Revenue Contribution %, Profit Margin Contribution %, and Profit Margin %. Current revenue consistently trails prior-year benchmarks across all 2020 months.
@@ -148,9 +128,7 @@ Build a **self-service Power BI Sales Dashboard** that consolidates all transact
 ### 🗂️ Data Model — Star Schema Architecture
 
 <div align="center">
-
-<img src="https://raw.githubusercontent.com/YOUR_USERNAME/REPO_NAME/main/screenshots/Model_View.png" alt="Power BI Star Schema Data Model — Sales Transactions fact table connected to Customers, Products, Markets, Date, and Profit Target dimension tables" width="85%"/>
-
+<img src="screenshots/Model_View.svg" alt="Power BI Star Schema Data Model — Sales Transactions fact table connected to Customers, Products, Markets, Date, and Profit Target dimension tables" width="85%"/>
 </div>
 
 > **Power BI star schema** connecting the `Sales Transactions` fact table to five dimension tables: Customers, Products, Markets, Date, and Profit Target — optimized for fast DAX calculations and clean drill-through analysis.
@@ -501,9 +479,9 @@ mysql -u root -p < dataset.sql
 
 <br/>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hari-dharan-ks-64325a287/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yourusername)
-
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-F7A800?style=for-the-badge&logo=google-chrome&logoColor=white)](https://yourportfolio.com)
 
 </div>
 
@@ -511,7 +489,7 @@ mysql -u root -p < dataset.sql
 
 <div align="center">
 
-<!-- Footer waving banner — Thank you, just the wave shape -->
+<!-- Footer waving banner — no text, just the wave shape -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer" width="100%"/>
 
 **⭐ If this project helped you, consider giving it a star!**
