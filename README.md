@@ -42,26 +42,6 @@
 
 </div>
 
----
-
-## 📌 Table of Contents
-
-- [Project Overview](#-project-overview)
-- [Dashboard Preview](#-dashboard-preview)
-- [Key Insights](#-key-insights)
-- [KPIs Tracked](#-kpis-tracked)
-- [Tech Stack](#-tech-stack)
-- [Data Model](#-data-model)
-- [SQL Analysis](#-sql-analysis)
-- [Dashboard Features](#-dashboard-features)
-- [Folder Structure](#-folder-structure)
-- [Business Impact](#-business-impact)
-- [Installation & Usage](#-installation--usage)
-- [Future Enhancements](#-future-enhancements)
-- [Author](#-author)
-
----
-
 ## 🎯 Project Overview
 
 ### 🏢 Business Problem
@@ -98,7 +78,7 @@ Build a **self-service Power BI Sales Dashboard** that consolidates all transact
 ### 🔑 Page 1 — Key Insights (Revenue & Sales Overview)
 
 <div align="center">
-<img src="screenshots/Key_Insights.svg" alt="Key Insights Dashboard — Total Revenue ₹142M, Sales Quantity 350K units, Revenue by Market, Top 5 Customers and Products for 2020" width="90%"/>
+<img src="" alt="Key Insights Dashboard — Total Revenue ₹142M, Sales Quantity 350K units, Revenue by Market, Top 5 Customers and Products for 2020" width="90%"/>
 </div>
 
 > **Overview of total revenue (₹142M), sales quantity (350K units), revenue by market, top 5 customers, and top 5 products for 2020.** Delhi NCR dominates revenue at ₹78M (54.7%), while Electricalsara Stores is the #1 customer at ₹66M. Revenue peaked in Feb–Mar 2020 and declined sharply through June.
@@ -107,31 +87,19 @@ Build a **self-service Power BI Sales Dashboard** that consolidates all transact
 
 ### 💹 Page 2 — Profit Analysis (Profitability Deep Dive)
 
-<div align="center">
-<img src="screenshots/Profit_Analysis.svg" alt="Profit Analysis Dashboard — Revenue Contribution %, Profit Contribution % by market, Customer-level Profit Margin table" width="90%"/>
-</div>
-
-> **Multi-dimensional profitability view** showing Revenue Contribution %, Profit Contribution % by market, and a customer-level profit margin table. Lucknow shows a **-2.7% revenue contribution** — the only loss-making market. Epic Stores records **-4.7% profit margin**, signaling a damaging customer relationship.
+> Multi-dimensional profitability view** showing Revenue Contribution %, Profit Contribution % by market, and a customer-level profit margin table. Lucknow shows a **-2.7% revenue contribution** — the only loss-making market. Epic Stores records **-4.7% profit margin**, signaling a damaging customer relationship.
 
 ---
 
 ### 🏆 Page 3 — Performance Insights (YoY & Customer Benchmarking)
 
-<div align="center">
-<img src="screenshots/Performance_Insights.svg" alt="Performance Insights Dashboard — Year-over-Year revenue trend with profit margin % overlay and full customer breakdown table" width="90%"/>
-</div>
-
-> **Year-over-year revenue trend** with profit margin % overlay, plus a full customer breakdown table showing Revenue, Revenue Contribution %, Profit Margin Contribution %, and Profit Margin %. Current revenue consistently trails prior-year benchmarks across all 2020 months.
+> Year-over-year revenue trend** with profit margin % overlay, plus a full customer breakdown table showing Revenue, Revenue Contribution %, Profit Margin Contribution %, and Profit Margin %. Current revenue consistently trails prior-year benchmarks across all 2020 months.
 
 ---
 
 ### 🗂️ Data Model — Star Schema Architecture
 
-<div align="center">
-<img src="screenshots/Model_View.svg" alt="Power BI Star Schema Data Model — Sales Transactions fact table connected to Customers, Products, Markets, Date, and Profit Target dimension tables" width="85%"/>
-</div>
-
-> **Power BI star schema** connecting the `Sales Transactions` fact table to five dimension tables: Customers, Products, Markets, Date, and Profit Target — optimized for fast DAX calculations and clean drill-through analysis.
+> Power BI star schema** connecting the `Sales Transactions` fact table to five dimension tables: Customers, Products, Markets, Date, and Profit Target — optimized for fast DAX calculations and clean drill-through analysis.
 
 ---
 
@@ -369,24 +337,6 @@ WHERE date.year = 2020
 | 📄 **Multi-Page Navigation** | Three report pages: Key Insights · Profit Analysis · Performance Insights |
 | 🔴 **Negative Margin Highlighting** | Conditional formatting flags loss-making markets in red |
 
----
-
-## 📁 Folder Structure
-
-```
-📦 sales-insights-dashboard/
-│
-├── 📊 Sales_dashboard.pbix          # Main Power BI report (3 pages)
-├── 🗄️  dataset.sql                  # MySQL dump — customers, markets,
-│                                    #   products, date, transactions
-├── 🔍 sql_queries.txt               # All exploratory SQL queries
-├── 📖 README.md                     # This file
-│
-└── 📸 screenshots/
-    ├── Key_Insights.png             # Page 1 — Revenue & Sales Overview
-    ├── Profit_Analysis.png          # Page 2 — Profitability Deep Dive
-    ├── Performance_Insights.png     # Page 3 — YoY & Customer Benchmarking
-    └── Model_View.png               # Power BI Data Model (Star Schema)
 ```
 
 ---
@@ -413,56 +363,6 @@ WHERE date.year = 2020
 
 ---
 
-## 🚀 Installation & Usage
-
-### Prerequisites
-
-- [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/) — free download
-- MySQL 8.0+ — optional, only needed to re-run SQL queries
-- Git
-
-### Steps to Run
-
-**Step 1 — Clone the repository**
-```bash
-git clone https://github.com/yourusername/sales-insights-dashboard.git
-cd sales-insights-dashboard
-```
-
-**Step 2 — (Optional) Restore MySQL database**
-```sql
-mysql -u root -p < dataset.sql
--- Creates the `sales` database with all 5 tables fully populated
-```
-
-**Step 3 — Open the dashboard**
-```
-1. Launch Power BI Desktop
-2. File → Open → Select Sales_dashboard.pbix
-3. If prompted to update the data source:
-   - Home → Transform Data → Data Source Settings
-   - Update MySQL connection to: localhost / 127.0.0.1
-   - Enter your MySQL credentials → click Refresh
-4. Use Year/Month slicers at the top to filter the dashboard
-5. Navigate via tabs: Key Insights | Profit Analysis | Performance Insights
-```
-
----
-
-## 🔮 Future Enhancements
-
-- [ ] 🔮 **Sales Forecasting** — Integrate Prophet or Azure ML for 3-month revenue forecasting
-- [ ] 🔄 **Automated Data Refresh** — Schedule Power BI Service gateway refresh from MySQL
-- [ ] 🌐 **Web Publishing** — Publish to Power BI Service for browser-based sharing
-- [ ] 📱 **Mobile Layout** — Optimize report layout for Power BI Mobile app
-- [ ] 🤖 **Q&A Natural Language** — Enable Power BI Q&A for ad-hoc queries
-- [ ] 📧 **Automated Alerts** — Data-driven alerts when revenue drops below a defined threshold
-- [ ] 📊 **Customer Segmentation** — RFM analysis (Recency, Frequency, Monetary) on 38-customer base
-- [ ] 🗺️ **Geo Map Visual** — Choropleth map of India for spatial revenue visualization
-- [ ] 🔗 **Live API Integration** — Connect real-time sales pipeline data for live tracking
-
----
-
 ## 👤 Author
 
 <div align="center">
@@ -473,15 +373,14 @@ mysql -u root -p < dataset.sql
 <!-- ══════════════════════════════════════════════════════════════ -->
 <img src="https://ui-avatars.com/api/?name=Your+Name&size=100&background=F7A800&color=fff&rounded=true&bold=true" width="100px" alt="Author Avatar"/>
 
-### Your Name
+### Haridharan KS
 
 *Data Analyst · Power BI Developer · SQL Enthusiast*
 
 <br/>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hari-dharan-ks-64325a287/)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yourusername)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-F7A800?style=for-the-badge&logo=google-chrome&logoColor=white)](https://yourportfolio.com)
 
 </div>
 
@@ -491,8 +390,6 @@ mysql -u root -p < dataset.sql
 
 <!-- Footer waving banner — no text, just the wave shape -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer" width="100%"/>
-
-**⭐ If this project helped you, consider giving it a star!**
 
 *Built with 💛 using Power BI · MySQL · DAX · Power Query*
 
