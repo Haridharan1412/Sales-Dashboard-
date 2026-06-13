@@ -85,6 +85,8 @@ Build a **self-service Power BI Sales Dashboard** that consolidates all transact
 
 ### 💹 Page 2 — Profit Analysis (Profitability Deep Dive)
 
+![Image Alt](https://github.com/Haridharan1412/Sales-Dashboard-/blob/281ea214a1e1a1eebad9795af3e98fdbab6b92dd/Profit%20Analysis.png)
+
 > Multi-dimensional profitability view** showing Revenue Contribution %, Profit Contribution % by market, and a customer-level profit margin table. Lucknow shows a **-2.7% revenue contribution** — the only loss-making market. Epic Stores records **-4.7% profit margin**, signaling a damaging customer relationship.
 
 ---
