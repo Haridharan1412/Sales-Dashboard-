@@ -101,6 +101,8 @@ Year-over-year revenue trend** with profit margin % overlay, plus a full custome
 
 ### 🗂️ Data Model — Star Schema Architecture
 
+![Image Alt](https://github.com/Haridharan1412/Sales-Dashboard-/blob/eee25100d615b106b056770b586d4a07544b067a/Model%20View.png)
+
 Power BI star schema** connecting the `Sales Transactions` fact table to five dimension tables: Customers, Products, Markets, Date, and Profit Target — optimized for fast DAX calculations and clean drill-through analysis.
 
 ---
