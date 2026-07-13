@@ -77,7 +77,7 @@ Build a **self-service Power BI Sales Dashboard** that consolidates all transact
 
 ### 🔑 Page 1 — Key Insights (Revenue & Sales Overview)
 
-![Image Alt](https://github.com/Haridharan1412/Sales-Dashboard-/blob/f3852cd94fb6dc4a266541c632fe0d2eb0e26a6a/Key%20Insights.png)
+<img width="1449" height="1061" alt="Image" src="https://github.com/user-attachments/assets/a5706c8e-f2ae-4400-aa54-2691dfa88ae8" />
 
 **Overview of total revenue (₹142M), sales quantity (350K units), revenue by market, top 5 customers, and top 5 products for 2020.** Delhi NCR dominates revenue at ₹78M (54.7%), while Electricalsara Stores is the #1 customer at ₹66M. Revenue peaked in Feb–Mar 2020 and declined sharply through June.
 
@@ -85,7 +85,7 @@ Build a **self-service Power BI Sales Dashboard** that consolidates all transact
 
 ### 💹 Page 2 — Profit Analysis (Profitability Deep Dive)
 
-![Image Alt](https://github.com/Haridharan1412/Sales-Dashboard-/blob/281ea214a1e1a1eebad9795af3e98fdbab6b92dd/Profit%20Analysis.png)
+<img width="1444" height="1054" alt="Image" src="https://github.com/user-attachments/assets/b6cf202a-1561-4331-ad35-b4f19848b6c2" />
 
 Multi-dimensional profitability view** showing Revenue Contribution %, Profit Contribution % by market, and a customer-level profit margin table. Lucknow shows a **-2.7% revenue contribution** — the only loss-making market. Epic Stores records **-4.7% profit margin**, signaling a damaging customer relationship.
 
@@ -93,7 +93,7 @@ Multi-dimensional profitability view** showing Revenue Contribution %, Profit Co
 
 ### 🏆 Page 3 — Performance Insights 
 
-![Image Alt](https://github.com/Haridharan1412/Sales-Dashboard-/blob/c294e7f19e0a2bf390276a349473bf8b9365748b/Performance%20Insights.png)
+<img width="1436" height="1056" alt="Image" src="https://github.com/user-attachments/assets/1e48383a-2a5b-4b95-ae17-60a0e0db9f3e" />
 
 Year-over-year revenue trend** with profit margin % overlay, plus a full customer breakdown table showing Revenue, Revenue Contribution %, Profit Margin Contribution %, and Profit Margin %. Current revenue consistently trails prior-year benchmarks across all 2020 months.
 
@@ -101,7 +101,7 @@ Year-over-year revenue trend** with profit margin % overlay, plus a full custome
 
 ### 🗂️ Data Model — Star Schema Architecture
 
-![Image Alt](https://github.com/Haridharan1412/Sales-Dashboard-/blob/eee25100d615b106b056770b586d4a07544b067a/Model%20View.png)
+<img width="1863" height="668" alt="Image" src="https://github.com/user-attachments/assets/7e0bffde-8330-43f7-a0f5-67e8c3217486" />
 
 Power BI star schema** connecting the `Sales Transactions` fact table to five dimension tables: Customers, Products, Markets, Date, and Profit Target — optimized for fast DAX calculations and clean drill-through analysis.
 
